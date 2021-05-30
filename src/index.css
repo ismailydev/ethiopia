@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-black;
+}
+
+@layer components {
+    .center {
+        @apply absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%];
+    }
+}
+
+@layer utilities {
+    .clip-bg {
+        clip-path: circle(5%);
+    }
+}
